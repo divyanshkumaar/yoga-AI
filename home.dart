@@ -45,7 +45,7 @@ Future<String> loadAsset() async {
                 'assets/lola.gif',
               ),
               Text(
-                "Welcome back, Siraj.",
+                "Welcome back, Divyansh.",
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
@@ -70,13 +70,7 @@ Future<String> loadAsset() async {
                     onPressed: () {
                       //I integrated 2 text to speech engines
                       FlutterTts flutterTts = new FlutterTts();
-                      flutterTts.speak("Hello World");
-
-                      VoiceController controller =
-                          FlutterTextToSpeech.instance.voiceController();
-                      controller.init().then((_) {
-                        controller.speak("testing audio output",
-                            VoiceControllerOptions(delay: 5));
+                      flutterTts.speak("Hello");
                       });
                       showDialog(
                           context: context,
